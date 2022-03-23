@@ -1,1 +1,8 @@
-
+body{
+    background-color:#ddf1f7;
+}
+h1 {
+    font-family: 'Times New Roman';
+    color: #2c7d96;
+    text-align: center;
+}
