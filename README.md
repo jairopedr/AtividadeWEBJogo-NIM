@@ -11,6 +11,6 @@
 #Como jogar
 - O jogador começara com o número 21, e a cada rodada deverá escolher um valor para susbtrair este número, e ganha quem subtrair até o número 1 primeiro.
 
-**Link parao jogo: https://jairopedr.github.io/AtividadeWEBJogo-NIM/
+**Link para o jogo: (https://jairopedr.github.io/AtividadeWEBJogo-NIM/)**
 
 Grupo: Jairo Pedro Santana; Luana Teixeira dos Reis; Yan Silveira de Souza
