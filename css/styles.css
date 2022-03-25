@@ -6,3 +6,32 @@ h1 {
     color: #2c7d96;
     text-align: center;
 }
+
+ul li{
+    font-family: 'Times New Roman';
+    font-size: 1.5em;
+    color: rgb(25, 27, 27);
+    text-align: justify;
+    
+    margin: 0.4rem;
+    margin-left: 20em;
+    border: 1.0px;
+    border-radius: 1.5em;
+}
+
+#mododeJogo {
+    display: flex;
+    font-family: 'Times New Roman';
+    color: rgb(25, 27, 27);
+    font-size: 20px;
+    margin-left: 550px;
+}
+
+#nivel {
+    display: flex;
+    font-family: 'Times New Roman';
+    color: rgb(25, 27, 27);
+    font-size: 20px;
+    margin-left: -190px;
+
+}
