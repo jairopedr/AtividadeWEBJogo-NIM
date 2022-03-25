@@ -35,3 +35,30 @@ ul li{
     margin-left: -190px;
 
 }
+
+button{
+    font-family: 'Times New Roman';
+    font-size: 0.9em;
+    color: aliceblue;
+    background-color: #2c7d96;
+    text-align: center;
+    width: 4vw;
+    height: 3vw;
+    border: 8px;
+    border: #1e202027;
+    border-radius: 0.2em;
+    box-shadow: 0.8em;
+    
+}
+
+#jogador {
+    font-family: 'Times New Roman';
+    color: rgb(1, 2, 2);
+    text-align: center;
+}
+
+#jogador2 {
+    font-family: 'Times New Roman';
+    color: rgb(1, 2, 2);
+    text-align: center;
+}
