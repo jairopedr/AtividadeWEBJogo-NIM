@@ -91,3 +91,33 @@ function jogarComputador() {
 function log(message) {
   document.getElementById('log').innerHTML += '<li>' + message + '</li>'
 }
+
+function setButtonsEnabled(enabled) {
+  const playerButtons = document.getElementsByClassName('playerButton');
+  for (const button of playerButtons) {
+    button.disabled = !enabled;
+  }
+
+  if (enabled) {
+    disableIllegalButtons();
+  }
+}
+
+function disableIllegalButtons() {
+  if (total == 2) {
+    document.getElementById('botao2').disabled = true;
+    document.getElementById('botao2.2').disabled = true;
+    document.getElementById('botao3').disabled = true;
+    document.getElementById('botao3.2').disabled = true;
+  }
+
+  if (total == 3) {
+    document.getElementById('botao3').disabled = true;
+    document.getElementById('botao3.2').disabled = true;
+  }        
+}
+
+let resetButton= document.querySelector("#botaoDeReset")
+resetButton.addEventListener("click", function(){
+    location.reload();
+});
