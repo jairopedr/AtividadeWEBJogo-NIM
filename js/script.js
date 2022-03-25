@@ -56,3 +56,38 @@ function subtrairPlayerEscolha2(escolha) {
     setButtonsEnabled(true);//ativar botoes
   }
 }
+
+function jogarComputador() {
+  let escolha;
+
+  if (document.getElementById('modoDificil').checked) {
+    if (total % 4 == 1) {
+      escolha = 1 + Math.floor(Math.random() * 3);
+    } else {
+      escolha = (total - 1) % 4;
+    }
+  } else{
+    if(total == 2) {
+      escolha = 1;
+    } else if (total == 3) {
+      escolha = 1 + Math.floor(Math.random() * 2);
+    } else {
+      escolha = 1 + Math.floor(Math.random() * 3);
+    }
+  }
+  log('Computador subtrai ' + escolha);
+  subtrair(escolha);
+
+  if (total == 1) {
+    log('<h2>COMPUTADOR GANHOU!</h2>');
+    document.getElementById('total').innerText += ' - COMPUTADOR GANHOU!';
+    setButtonsEnabled(false);
+    document.getElementById('botaoDeReset').style.display = 'block';
+  } else {
+    setButtonsEnabled(true);
+  }
+}
+
+function log(message) {
+  document.getElementById('log').innerHTML += '<li>' + message + '</li>'
+}
